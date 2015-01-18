@@ -24,6 +24,8 @@
     <!--<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">-->
     <!--<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">-->
 
+    <link rel="stylesheet" href="css/typehead.css"/>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -91,7 +93,7 @@
                         <button type="button" class="btn btn-warning">Editar/Excluir Células</button>
                         <button type="button" class="btn btn-warning">Estatísticas</button>
                     </div>
-                    <!--&lt;!&ndash;Criar Conta&ndash;&gt;-->
+                    <!--Criar Conta-->
                     <!--<form novalidate="novalidate">-->
                         <!--<div class="form-group">-->
                             <!--<label for="nameLider">Nome</label>-->
@@ -109,35 +111,49 @@
                     <!--</form>-->
 
                     <!--Criar Célula-->
-                    <form novalidate="novalidate">
-                        <div class="form-group">
-                            <label for="nameLiderCell">Nome do Líder</label>
-                            <input type="text" class="form-control" id="nameLiderCell" placeholder="Nome do Líder">
-                        </div>
-                        <label for="geracao">Geração</label>
-                        <select id="geracao" class="form-control">
-                            <option value="F1">F1</option>
-                            <option value="F2">F2</option>
-                            <option value="F3">F3</option>
-                            <option value="F4">F4</option>
-                            <option value="F5">F5</option>
-                            <option value="F6">F6</option>
-                            <option value="F7">F7</option>
-                            <option value="F8">F8</option>
-                            <option value="F9">F9</option>
-                            <option value="F10">F10</option>
-                            <option value="F11">F11</option>
-                            <option value="F12">F12</option>
-                        </select>
-                        <div class="form-group">
-                            <label for="passLiderCell">Senha de acesso</label>
-                            <input type="password" class="form-control" id="passLiderCell" placeholder="Senha de acesso">
-                        </div>
-                        <button type="submit" class="btn btn-default">Criar</button>
-                    </form>
-
-
-                    <!--&lt;!&ndash; Login Form&ndash;&gt;-->
+                    <!--<form novalidate="novalidate">-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="nameLiderCell">Nome do Líder</label>-->
+                            <!--<input type="text" class="form-control" id="nameLiderCell" placeholder="Nome do Líder">-->
+                        <!--</div>-->
+                        <!--<label for="geracao">Geração</label>-->
+                        <!--<select id="geracao" class="form-control">-->
+                            <!--<option value="F1">F1</option>-->
+                            <!--<option value="F2">F2</option>-->
+                            <!--<option value="F3">F3</option>-->
+                            <!--<option value="F4">F4</option>-->
+                            <!--<option value="F5">F5</option>-->
+                            <!--<option value="F6">F6</option>-->
+                            <!--<option value="F7">F7</option>-->
+                            <!--<option value="F8">F8</option>-->
+                            <!--<option value="F9">F9</option>-->
+                            <!--<option value="F10">F10</option>-->
+                            <!--<option value="F11">F11</option>-->
+                            <!--<option value="F12">F12</option>-->
+                        <!--</select>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="nDiscipulos">N° de discípulos em Célula</label>-->
+                            <!--<input type="number" class="form-control" id="nDiscipulos" placeholder="Número de Discípulos">-->
+                        <!--</div>-->
+                        <!--<button type="submit" class="btn btn-warning">Gravar</button>-->
+                    <!--</form>-->
+                    <div class="col-lg-12 col-lg-offset-3 text-center">
+                        <form id="liderSearch">
+                            <div class="typeahead-container">
+                                <div class="typeahead-field">
+                                    <span class="typeahead-query">
+                                    <input id="user_v1-query" name="user_v1[query]" type="search" placeholder="Buscar Conta Líder" autocomplete="off">
+                                </span>
+                                <span class="typeahead-button">
+                                    <button type="submit">
+                                        <i class="search-icon"></i>
+                                    </button>
+                                </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Login Form-->
                     <!--<form class="form-horizontal">-->
                         <!--<div class="form-group">-->
                             <!--<label for="userLogin" class="col-sm-2 control-label">Login</label>-->
@@ -183,23 +199,11 @@
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Sobre</h3>
-                        <p>Somos uma igreja em células G12.</p>
+                        <p>Somos uma igreja em células - modo G12.</p>
                     </div>
                 </div>
             </div>
@@ -215,52 +219,6 @@
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Mesmo</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -271,6 +229,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jquery.typeahead.min.js"></script>
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
