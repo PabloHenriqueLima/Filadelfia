@@ -58,12 +58,12 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: #000;
 }
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #000;
 }
 
 hr.star-primary {
@@ -173,7 +173,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 section h2 {
@@ -449,4 +449,12 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+/*Minhas Mods*/
+.success .btn{
+    margin: 3px 0;
+}
+.btn-warning{
+    font-weight: bold;
+    color: #000000;
 }
